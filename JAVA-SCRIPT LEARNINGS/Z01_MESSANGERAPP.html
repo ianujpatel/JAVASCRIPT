@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MY TEXT EDITOR</h1>
+    <p></p>
+    <label for="messages">messages <input type="text" placeholder="write something">
+      
+        <button>send</button>
+    </label>
+    <script>
+        let inp = document.querySelector("input");
+        let p =document.querySelector("p")
+        let butn = document.querySelector("button")
+        butn.addEventListener("click" ,function(){
+            console.log(inp.value);
+            p.innerText = inp.value;
+        })
+    </script>
+</body>
+</html>
